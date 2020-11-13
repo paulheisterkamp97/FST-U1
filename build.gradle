@@ -9,11 +9,11 @@ plugins {
 mainClassName = 'de.unitrier.st.core.Main'
 
 sonarqube {
-    properties {
-    property "sonar.projectKey", "key"
-    property "sonar.organization", "organization"   
+  properties {
+    property "sonar.projectKey", "paulheisterkamp97_FST-U1"
+    property "sonar.organization", "paulheisterkamp97"
     property "sonar.host.url", "https://sonarcloud.io"
-    }
+  }
 }
 
 
