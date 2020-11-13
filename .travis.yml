@@ -7,10 +7,12 @@ before_install:
  - gradle installWrapper
 
 script:
- - gradle buildCore
+ - ./gradlew buildCore
  
 job:
  include:
+ - jdk: openjdk8
+   os: linux
  - jdk: openjdk11
    os: linux
  - jdk: openjdk11
