@@ -8,7 +8,8 @@ before_install:
 
 script:
  - gradle buildCore
-
+ - gradle test
+ 
 job:
  include:
  - jdk: openjdk8
@@ -24,5 +25,5 @@ Notifications:
  email:
   recipients:
   - s4paheis@uni-trier.de
-  on_success: never
+  on_success: always
   on_failure: always
