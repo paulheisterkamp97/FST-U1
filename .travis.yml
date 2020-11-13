@@ -6,6 +6,9 @@ git:
 before_install:
  - gradle installWrapper
 
+script:
+ - gradle buildCore
+
 job:
  include:
  - jdk: openjdk8
